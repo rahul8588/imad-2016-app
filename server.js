@@ -30,15 +30,7 @@ articleTwo: {
     heading :'Article two',
     date :'22/09/2016',
     content :` <p>
-                  This is the content for my Article second page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. 
-             </p>
-              
-              <p>
-                  This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. 
-              </p>
-              <p>
-                  This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. 
-              </p> `
+                  This is the content for my Article second page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one </p> `
 
 },
 articleThree: {
@@ -47,14 +39,7 @@ articleThree: {
     date :'23/09/2016',
     content :` <p>
                   This is the content for my Article third page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. 
-             </p>
-              
-              <p>
-                  This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. 
-              </p>
-              <p>
-                  This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. 
-              </p> `
+             </p>`
 
 }
 };
