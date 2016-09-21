@@ -9,7 +9,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var articleOne = {
+var articles= {
+ articleOne: {
     title :'Article one: Rahul Kumar',
     heading :'Article one',
     date :'21/09/2016',
@@ -23,8 +24,42 @@ var articleOne = {
               <p>
                   This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. 
               </p> `
+},
+articleTwo: {
+     title :'Article two: Rahul Kumar',
+    heading :'Article two',
+    date :'22/09/2016',
+    content :` <p>
+                  This is the content for my Article second page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. 
+             </p>
+              
+              <p>
+                  This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. 
+              </p>
+              <p>
+                  This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. 
+              </p> `
 
+},
+articleThree: {
+     title :'Article three: Rahul Kumar',
+    heading :'Article three',
+    date :'23/09/2016',
+    content :` <p>
+                  This is the content for my Article third page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. 
+             </p>
+              
+              <p>
+                  This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. 
+              </p>
+              <p>
+                  This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. 
+              </p> `
+
+}
 };
+
+
 function createTemplate (data){
     var title=data.title;
     var date=data.date;
