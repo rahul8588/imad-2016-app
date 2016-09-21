@@ -9,12 +9,14 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var articles ={
- articleOne: {
-    title :'Article one: Rahul Kumar',
-    heading :'Article one',
-    date :'21/09/2016',
-    content :`<p>
+var articles={
+    
+
+"article-One": {
+    title:'Article one: Rahul kumar',
+    heading: 'Article one',
+    date: '21/09/16',
+    content: ` <p>
                   This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. 
              </p>
               
@@ -25,32 +27,32 @@ var articles ={
                   This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. 
               </p> `
 },
-articleTwo: {
-     title :'Article two: Rahul Kumar',
-    heading :'Article two',
-    date :'23/09/2016',
-    content :` <p>
-                  This is the content for my Article secend page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. 
-             </p>`
-
+"article-Two": {
+    title:'Article one: Rahul kumar',
+    heading: 'Article two',
+    date: '22/09/16',
+    content: ` <p>
+                  This is the content for my Article second page.
+             
+              </p> `
+    
 },
-articleThree: {
-     title :'Article three: Rahul Kumar',
-    heading :'Article three',
-    date :'23/09/2016',
-    content :` <p>
-                  This is the content for my Article thrid page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. This is the content for my Article one page. 
-             </p> `
-
-}
+ "article-Three": {
+     title:'Article three: Rahul kumar',
+    heading: 'Article three',
+    date: '23/09/16',
+    content: ` <p>
+                  This is the content for my Article third page.
+             
+              </p> `
+ }
 };
-
 
 function createTemplate (data){
     var title=data.title;
     var date=data.date;
     var heading=data.heading;
-    var content=data.content
+    var content=data.content;
 
 var htmlTemplate= `
    <html>
@@ -90,8 +92,8 @@ var htmlTemplate= `
 }
 
 
-app.get('/article-one', function (req,res){
-    res.send(createTemplate(articleOne));
+app.get('/articleName', function (req,res){
+    res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/article-two', function (req,res){
