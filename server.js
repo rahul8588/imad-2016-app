@@ -25,13 +25,13 @@ var articleOne = {
               </p> `
 
 };
-function htmlTemplate (data){
+function createTemplate (data){
     var title=data.title;
     var date=data.date;
     var heading=data.teading;
     var content=data.contant
 
-var htmlTemplete= `
+var htmlTemplate= `
    <html>
        <head>
     <title>
